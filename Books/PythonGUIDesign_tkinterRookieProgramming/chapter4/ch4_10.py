@@ -1,0 +1,42 @@
+import tkinter as tk
+
+
+if __name__ == '__main__':
+    root = tk.Tk()
+    root.title("ch4_10")
+
+    lab = tk.Label(root, text="", bg="yellow", width=20)
+    btn_7 = tk.Button(root, text="7", width=3)
+    btn_8 = tk.Button(root, text="8", width=3)
+    btn_9 = tk.Button(root, text="9", width=3)
+    btn_M = tk.Button(root, text="7", width=3)
+    btn_4 = tk.Button(root, text="4", width=3)
+    btn_5 = tk.Button(root, text="5", width=3)
+    btn_6 = tk.Button(root, text="6", width=3)
+    btn_S = tk.Button(root, text="-", width=3)
+    btn_1 = tk.Button(root, text="1", width=3)
+    btn_2 = tk.Button(root, text="2", width=3)
+    btn_3 = tk.Button(root, text="3", width=3)
+    btn_P = tk.Button(root, text="+", width=3)
+    btn_0 = tk.Button(root, text="0", width=8)
+    btn_D = tk.Button(root, text=".", width=3)
+    btn_E = tk.Button(root, text="=", width=3)
+    
+    lab.grid(row=0, column=0, columnspan=4)
+    btn_7.grid(row=1, column=0, padx=5)
+    btn_8.grid(row=1, column=1, padx=5)
+    btn_9.grid(row=1, column=2, padx=5)
+    btn_M.grid(row=1, column=3, padx=5)
+    btn_4.grid(row=2, column=0, padx=5)
+    btn_5.grid(row=2, column=1, padx=5)
+    btn_6.grid(row=2, column=2, padx=5)
+    btn_S.grid(row=2, column=3, padx=5)
+    btn_1.grid(row=3, column=0, padx=5)
+    btn_2.grid(row=3, column=1, padx=5)
+    btn_3.grid(row=3, column=2, padx=5)
+    btn_P.grid(row=3, column=3, padx=5)
+    btn_0.grid(row=4, column=0, padx=5, columnspan=2)
+    btn_D.grid(row=4, column=2, padx=5)
+    btn_E.grid(row=4, column=3, padx=5)
+
+    root.mainloop()
